@@ -162,7 +162,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="6">
-<input type="hidden" id="yelog_site_word_count" value="1.6k">
+<input type="hidden" id="yelog_site_word_count" value="1.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -295,12 +295,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-22 10:24:29'>2020-04-21 14:32</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-23 00:16:21'>2020-04-21 14:32</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:548</span>
+        <span>字数:879</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -375,8 +375,7 @@
 <pre><code>**这是加粗的文字**
 *这是倾斜的文字*
 ***这是斜体加粗的文字***
-~~这是加删除线的文字~~  
-</code></pre><p>效果如下：  </p>
+~~这是加删除线的文字~~  </code></pre><p>效果如下：  </p>
 <p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del>  </p>
 <blockquote>
 <h1 id="5、分割线"><a href="#5、分割线" class="headerlink" title="5、分割线"></a><strong><em>5、分割线</em></strong></h1></blockquote>
@@ -386,8 +385,7 @@
 <pre><code>---
 ----
 ***
-*****  
-</code></pre><p>效果如下：<br>可以看到显示效果是一样的。  </p>
+*****  </code></pre><p>效果如下：<br>可以看到显示效果是一样的。  </p>
 <hr>
 <hr>
 <hr>
@@ -400,10 +398,8 @@
 <p>示例：  </p>
 <pre><code>- 列表内容
 + 列表内容
-* 列表内容
-
-注意：- + * 跟内容之间都要有一个空格  
-</code></pre><p>效果如下：  </p>
+* 列表内容</code></pre><p>注意：- + * 跟内容之间都要有一个空格  </p>
+<p>效果如下：  </p>
 <ul>
 <li>列表内容</li>
 </ul>
@@ -417,20 +413,64 @@
 <p>语法格式：  </p>
 <p>数字加点。  </p>
 <p>示例：  </p>
-<pre><code>1. 列表内容
+<pre><code>1. 列表内容  
 2. 列表内容
-3. 列表内容
-
-注意：序号跟内容之间要有空格  
-</code></pre><p>效果如下：  </p>
+3. 列表内容</code></pre><p>注意：序号跟内容之间要有空格  </p>
+<p>效果如下：  </p>
 <ol>
 <li>列表内容</li>
 <li>列表内容</li>
 <li>列表内容   </li>
 </ol>
+<p><strong>列表嵌套</strong></p>
+<p>语法格式：<br>上一级和下一级之间敲三个空格即可。</p>
+<ul>
+<li><p>一级无序列表内容  </p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容  </li>
+<li>二级无序列表内容  </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>一级无序列表内容   <ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容        </li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<ol>
+<li><p>一级有序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+<li><p>一级有序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ol>
 <blockquote>
 <h1 id="7、表格"><a href="#7、表格" class="headerlink" title="7、表格"></a><strong><em>7、表格</em></strong></h1></blockquote>
-<p><img src="http://m.qpic.cn/psc?/V12wSKQo3tMUOk/JrH0YF1q0ixQX3HL9y*6koRFBULMXrgcUZc7A5ijK6yEWYV7wOYekoliqv0deZOUGU5uCXPRxp4d0ydyNPfKQw!!/mnull&bo=kAGzAAAAAAADBwA!&rf=photolist&t=5" alt=""><br>效果如下：  </p>
+<pre><code>表头|表头|表头
+---|:--:|---:
+内容|内容|内容
+内容|内容|内容
+
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 | 包起来。此处省略</code></pre><p>示例：<br>    |表头|表头|表头|<br>    |–|:–: |–: |<br>    |内容|内容|内容|<br>    |内容|内容|内容|  </p>
+<p>效果如下：  </p>
 <table>
 <thead>
 <tr>
@@ -455,7 +495,16 @@
 <p>语法格式：  </p>
 <p>单行代码：代码之间分别用一个反引号包起来。  </p>
 <pre><code>`代码内容`   </code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行。  </p>
-
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">    代码...</span><br><span class="line">    代码...</span><br><span class="line">    代码...</span><br><span class="line">   </span><br><span class="line">     &#96;&#96;&#96;  </span><br><span class="line">示例：</span><br><span class="line">单行代码  </span><br><span class="line"></span><br><span class="line">    &#96;create database hero;&#96;</span><br><span class="line"></span><br><span class="line">代码块</span><br></pre></td></tr></table></figure>
+function fun(){
+    echo &quot;这是一句非常牛逼的代码&quot;;
+}
+    fun();
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">效果如下：</span><br><span class="line">单行代码</span><br><span class="line">&#96;create database hero;&#96;</span><br><span class="line">代码块</span><br></pre></td></tr></table></figure>
+function fun(){
+    echo &quot;这是一句非常牛逼的代码&quot;;
+}
+    fun();</code></pre><pre><code></code></pre>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 414268509@qq.com </span>
     </div>
@@ -465,10 +514,10 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>Markdown的语法简要规则</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">548</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">879</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="浮世微尘">浮世微尘</a></p>
     <p><span class="copy-title">发布时间:</span>2020-04-21, 14:32:37</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-22, 10:24:29</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-23, 00:16:21</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/21/markdown%E7%9A%84%E8%AF%AD%E6%B3%95%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/" title="Markdown的语法简要规则">https://missyoui.github.io/2020/04/21/markdown%E7%9A%84%E8%AF%AD%E6%B3%95%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
